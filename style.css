@@ -56,7 +56,6 @@ footer{
 /*****  End Starter Code ****/
 
 nav a{
-  background-color: #ddd;
   color: black;
   font-weight: bold;
   text-decoration: none;
@@ -76,19 +75,18 @@ a:hover {
   transition: top 1s ease-out;
   z-index: 1;
   /* Requirement 3a code here*/
-  left: 50%;
-  position: absolute;
-  transform: translateY(-100%);
+  top: -40px;
+  position: absolute;;
 }
 
 /* Requirement 3b code here*/
 .skip a:focus{
-  transform: translateY(0%);
+  top: 10px;
 }
 
 /* Requirement 4 code here*/
-:focus{
-  border: solid, 2px;
+*:focus{
+  border: solid 2px;
 }
 
 
@@ -112,7 +110,6 @@ header{
   background-image: url(../images/header.jpg);
   background: no-repeat;
   grid-row: 1 / 2;
-
 }
   
     /* YOUR CODE HERE; */
@@ -181,20 +178,18 @@ header{
   
 }
 
-
-
-
 @media screen and (min-width: 800px){
   nav{
     padding: 30px 0;
     text-align: right;
+    align-self: center
     /* Your code here */
   }
 
   .container{
     display: grid; 
-    grid-template-columns: 50px, auto, 500px, auto, 50px;
-    grid-row: 400px, 400px, 400px, 400px, 400px;
+    grid-template-columns: 50px auto 500px auto 50px;
+    grid-row: 400px 400px 400px 400px 400px;
   }
 
   .about{
