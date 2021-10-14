@@ -108,7 +108,7 @@ header{
   height: 400px; /* Parallax effect */
   grid-column: 1 / -1;
   background-image: url(../images/header.jpg);
-  background: no-repeat;
+  background-repeat: no-repeat;
   grid-row: 1 / 2;
 }
   
@@ -189,7 +189,7 @@ header{
   .container{
     display: grid; 
     grid-template-columns: 50px auto 500px auto 50px;
-    grid-row: 400px 400px 400px 400px 400px;
+    grid-template-rows: 400px 400px 400px 400px 400px;
   }
 
   .about{
